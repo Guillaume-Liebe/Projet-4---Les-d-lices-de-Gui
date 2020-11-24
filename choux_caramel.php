@@ -3,7 +3,7 @@ session_start();
 $host_name = 'db5000514656.hosting-data.io';
 $database = 'dbs494142';
 $user_name = 'dbu854808';
-$password = 'Guizmo-34800';
+$password = '***********';
 $bdd = null;
 
 try {
