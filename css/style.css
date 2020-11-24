@@ -1,0 +1,6489 @@
+
+/*Corps de page*/
+body
+{
+    margin: 0;
+    pointer-events: none;
+}
+
+/*Polices de caractère*/
+@font-face {
+    font-family: "rightland";
+    src: url("../fonts/rightland/rightland.otf") format("otf"),
+         url("../fonts/rightland/rightland.ttf") format("ttf"),
+         url("../fonts/rightland/rightland.woff") format("woff"),
+         url("../fonts/rightland/rightland.woff2") format("woff2");
+    }
+
+/*Haut de page*/
+header
+{
+    width: 100%;
+    height: 100px;
+}
+
+#scroll
+{
+    margin-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+/*Logo*/
+#logo
+{   
+    background-image: url('../img/patisseries/montage_logo.png');
+    background-repeat: no-repeat;
+    background-size: 1910px;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 680px;
+    margin-top: -300px;
+    z-index: 1;
+}
+
+/*Identifications Inscription|Connexion*/
+#identifications ul
+{
+    display: flex;
+    justify-content: center;
+    margin-top: -220px;
+    right: 45px;
+    position: absolute;
+    pointer-events: painted;
+    z-index: 4;
+}
+
+#identifications li 
+{
+    opacity: 1;
+}
+
+#identifications a 
+{
+    color: #0089d3;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.barre
+{
+    opacity: 0;
+}
+
+/*Block inscription*/
+#inscription
+{
+    visibility: hidden;
+    margin-top: -20px;
+    margin-bottom: -820px;
+    pointer-events: painted;
+    z-index: 4;
+}
+
+#inscription h4
+{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 130px;    
+    letter-spacing: 10px;
+}
+
+#modificationsGateaux
+{
+    position: relative;
+    margin-top: 342px;
+    margin-bottom: -355px;
+    visibility: hidden;
+    pointer-events: painted;
+}
+
+/*Cadre d'inscription*/
+.cadre_inscription
+{
+    position: relative;
+    visibility: visible;
+    z-index: 4;
+}
+
+#scroll
+{
+    margin-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+/*Block connexion*/
+#connexion
+{
+    position: relative;
+    margin-top: 342px;
+    margin-bottom: -355px;
+    visibility: hidden;
+    pointer-events: painted;
+}
+
+#connexion h4
+{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 75px;    
+    letter-spacing: 10px;
+}
+
+/*Page suppression*/
+#formulaire_suppression
+{
+    position: absolute;
+    visibility: visible;
+    pointer-events: painted;
+    z-index: 4;
+}
+
+#edition_profil
+{
+    position: relative;
+    margin-top: 342px;
+    margin-bottom: -355px;
+    visibility: visible;
+    pointer-events: painted;
+}
+
+/*Cadre de bienvenue lors de la connexion*/
+.cadre_bienvenue
+{
+    position: relative;
+    visibility: visible;
+    margin-top: 342px;
+    margin-bottom: -450px;
+    z-index: 4;
+}
+
+.cadre_modifier_commentaire
+{
+    position: relative;
+    visibility: visible;
+    margin-top: 120px;
+    margin-bottom: -450px;
+    z-index: 4;
+}
+
+.modifier_com
+{
+    text-align: center;
+}
+
+/*Déconnexion SESSION*/
+.deconnexion
+{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    right: 100px;
+    top: 35px;
+    letter-spacing: 3px;
+    text-shadow: 4px 3px 15px;
+    z-index: 5;
+}
+
+.deconnexion a 
+{
+    color: #0089d3;
+}
+
+.deconnexion a:hover 
+{
+    color: #117a8b;    
+    text-decoration: none;
+}
+
+/*Formulaire inscription | connexion*/
+table 
+{
+    display: flex;
+    justify-content: center;
+}
+
+tbody 
+{
+    background-color: rgba(234, 241, 255, 0.918);
+    border-radius: 10px;
+    padding: 40px;    
+    border: 0.5px solid #0089d377;    z-index: 4;
+}
+
+td
+{
+    text-align: end;
+    padding-bottom: 10px;
+    color:#0089d3;
+
+}
+
+label 
+{
+    font-weight: bold;
+    padding-right: 5px;    
+    letter-spacing: 2px;
+}
+
+input 
+{
+    padding-left: 5px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #0089d39c;    
+    pointer-events: painted;
+}
+
+#submit
+{
+    text-align: center;
+}
+
+#submit input 
+{
+    margin-top: 20px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color:#0089d3;
+}
+
+/*Phrase connectez-vous*/
+.phrase_connectezVous
+{
+    margin-top: -50px;
+    margin-bottom: -40px;
+}
+
+/*Nom du pseudo*/
+#pseudo 
+{
+    margin-top: 5px;
+    z-index: 4;
+    margin-bottom: -0px;
+    margin-left: -260px;
+}
+
+/*Cadre pour commentaires*/
+#commentaire
+{
+    margin-top: 7px;
+    border-radius: 5px;    
+    margin-bottom: 10px;
+    pointer-events: painted;    
+    resize: unset;
+}
+
+/*J'aime et j'aime pas */
+.likes_dislikes
+{
+    padding-top: 72%;
+}
+
+.likes_dislikes a
+{
+    color: coral;
+    text-decoration: none;
+}
+
+.likes_dislikes a:hover
+{
+    color: coral;
+    text-decoration: none;
+}
+
+/*Envoie du commentaire*/
+#envoie
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*Erreurs écrite en rouge*/
+#erreur
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*Boutons poster*/
+#poster
+{
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+/*Apparition textes en rouge*/
+font 
+{
+    position: relative;
+    text-align: center;
+    margin-top: -35px;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.informations_commentaires
+{
+    display: flex;
+    justify-content: center;
+    color: rgb(41, 41, 41);
+    background-color: rgba(0,123,255,.5);
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.commentaires
+{
+    color: white;
+    background-color: #0089d3;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*Bouton modifier*/
+#modifications
+{
+    margin-left: 20px;
+}
+
+/*Bouton supprimer*/
+#suppressions
+{
+    margin-left: 15px;
+}
+
+/*Passage de la souris boutons modifier et supprimer*/
+#modifications a 
+{
+    font-family:"rightland";
+    color: #b400ff;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+#suppressions a 
+{
+    font-family:"rightland";
+    color: #b400ff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/*Passage de la souris boutons modifier et supprimer*/
+#modifications a:hover 
+{
+    color: #0057b4;
+    text-decoration: none;
+}
+
+#suppressions a:hover 
+{
+    color: #0057b4;
+    text-decoration: none;
+}
+
+#arrierePlan_identifications 
+{
+    position: fixed;
+    background-image: url('../img/patisseries/couleur_arriere_plan.jpg');
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 4;
+    pointer-events: painted;
+    margin-top: -300px;
+}
+
+/*Menu*/
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    margin-bottom: 1rem;
+    position: relative;     
+    pointer-events: painted;
+}
+
+li
+{
+    font-family: "rightland";
+    margin-right: 5%;
+    margin-top: -45px;
+    list-style: none;
+    z-index: 99999;
+}
+
+a
+{
+    pointer-events: painted;
+}
+
+/*Effet rubriques menu*/
+nav a 
+{
+    color: #9c41ffc7;
+    padding: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: 4px 3px 15px;
+    letter-spacing: 4px;
+}
+
+nav a:hover
+{
+    color: #9c41ff;
+    text-decoration: none;
+}
+
+#effect_rubrique_menu 
+{
+    opacity: 1;
+    margin-top: 5px;
+}
+
+#effect_rubrique_menu:hover 
+{
+    background-image: url("../img/patisseries/effect.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    padding-bottom: 10px;
+    height: 110px;
+    opacity: 1;
+}
+
+/*Menu drop down icône bol mélangeur*/
+#icone_bol_melangeur
+{
+    background-image: url('../img/patisseries/bol_melangeur.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    width: 0%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#coulure
+{
+    background-image: url('../img/patisseries/coulure.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 0%;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.menu_icone
+{
+    visibility: hidden;
+    margin-top: -35px;
+    position: absolute;
+}
+
+/*Pointillé entre les textes*/
+.fraise_1
+{
+    position: absolute;
+    background-image: url('../img/patisseries/fraise_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    width: 70%;
+    height: 250px;
+    margin-left: -450px;
+    z-index: -1;
+}
+
+.kiwi_1
+{
+    position: absolute;
+    background-image: url('../img/patisseries/kiwi_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    width: 50%;
+    height: 250px;
+    margin-top: 220px;
+    margin-left: -320px;
+    z-index: 1;
+}
+
+.macaron_1
+{
+    position: absolute;
+    background-image: url('../img/patisseries/macaron_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    width: 100%;
+    height: 250px;
+    margin-top: 650px;
+    margin-left: -690px;
+    z-index: 1;
+}
+
+.macaron_2
+{
+    position: absolute;
+    background-image: url('../img/patisseries/macaron_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    width: 100%;
+    height: 250px;
+    margin-top: 650px;
+    margin-left: -690px;
+    z-index: 1;
+}
+
+/*Bandeau*/
+.ensemble_de_gateau 
+{
+    position: relative;
+    background-image: url("../img/patisseries/ensemble_de_gateau.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1150px;
+    margin-top: -300px;
+}
+
+/*Titre de niveau II*/
+.h-2
+{   
+    font-family: "rightland";
+    color: #343a40;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.container
+{
+    text-align: center;
+}
+
+.row 
+{
+    margin-top: 0px;
+}
+
+p
+{
+    font-size: 20px;
+    color: #343a40;
+    text-align: center;
+}
+
+/*Cartouche de blanc*/
+.cartouche_blanc
+{
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    margin-top: 195px;
+    opacity: 0.85;
+    border-radius: 50px;
+}
+
+#petit_cuisinier
+{
+    background-image: url('../img/petit_cuisinier/petit_cuisinier_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    width: 100%;
+    height: 300px;
+    margin-top: -90px;
+    margin-bottom: 0px;
+}
+
+#chantilly
+{
+    background-image: url('../img/patisseries/chantilly.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+    width: 100%;
+    height: 300px;
+    margin-top: -210px;
+    margin-bottom: -80px;
+}
+
+#chantilly_2
+{
+    background-image: url('../img/patisseries/chantilly_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+#chantilly_3
+{
+    background-image: url('../img/patisseries/chantilly_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px;
+    width: 100%;
+    height: 300px;
+    margin-top: -180px;
+    margin-bottom: -20px;
+}
+
+#chantilly_4
+{
+    background-image: url('../img/patisseries/chantilly_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 480px;
+    width: 100%;
+    height: 300px;
+    margin-top: -210px;
+    margin-bottom: -70px;
+}
+
+.welcome-gateau
+{
+    background-image: url("../img/patisseries/entremet_1.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 520px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px rgb(133, 133, 133);
+}
+
+.laboratoire_de_patisseries
+{
+    background-image: url('../img/laboratoire_de_patisserie/fond_ecran_laboratoire_de_patisserie_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: inherit;
+    background-size: 100%;    
+    width: 100%;
+    height: 1300px;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+/*Titre de niveau III*/
+.h-3
+{   
+    font-family: "rightland";
+    color: #343a40;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: -200px;
+    margin-top: 30px;
+}
+
+/*Titre de niveau V*/
+.h-5
+{   
+    font-family: "rightland";
+    color: #343a40;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: -200px;
+    margin-top: 75px;
+}
+
+/*Titre de niveau VI*/
+.h-6
+{   
+    font-family: "rightland";
+    color: #343a40;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/*Boutons*/
+button
+{
+    color: white;
+    background-color: #117a8b;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 30px;
+    border: none;
+    pointer-events: painted;
+}
+
+.paragraphe_p
+{
+    text-align: center;
+    color: #343a40;
+}
+
+/*Pointillé entre les textes*/
+#pointille
+{
+    background-image: url('../img/patisseries/pointilles_ronds.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: -7px;
+}
+
+/*Flèches*/
+.arrow-right 
+{
+    position: absolute;
+    margin-left: -22px;
+    margin-top: 5px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid #ff0048;
+}
+
+/*Cartouche de blanc*/
+.cartouche_blanc_2
+{
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-top: 100px;
+    opacity: 0.85;
+    border-radius: 50px;
+}
+
+
+.cartouche_blanc_3
+{
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    padding-bottom: 70px;
+    margin-top: 350px;
+    opacity: 0.85;
+    border-radius: 50px;
+}
+
+.cartouche_blanc_4
+{
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    padding-bottom: 70px;
+    margin-top: 350px;
+    opacity: 0.85;
+    border-radius: 50px;
+}
+
+.cartouche_blanc_fraisier
+{
+    background-color: #ffffff;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    margin-top: 120px;
+    opacity: 0.85;
+    border-radius: 50px;
+}
+
+.col-sm, .col-sm-4 
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Fond d'écran gâteaux*/
+.wallpaper
+{
+    background-image: url('../img/laboratoire_de_patisserie/fond_ecran_laboratoire_de_patisserie_2.png');
+    background-repeat: repeat;
+    background-position: center;
+    background-position-y: inherit;
+    background-size: 100%;    
+    width: 100%;
+    height: 2000px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: -1;
+    position: absolute;
+}
+
+.wallpaper_2
+{
+    background-image: url('../img/laboratoire_de_patisserie/fond_ecran_laboratoire_de_patisserie_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: inherit;
+    background-size: 100%;
+    width: 100%;
+    height: 2000px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: -1;
+    position: absolute;
+}
+
+.laboratoire_de_patisseries_2
+{
+    position: sticky;
+}
+
+/*Photos fraisier*/
+#photos_gateau_1
+{
+    background-image: url('../img/patisseries/fraisier_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_gateau_1:hover
+{
+    background-size: 115%;
+}
+
+#photos_fraisier_1 
+{
+    background-image: url('../img/patisseries/fraisier_1.png');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    pointer-events: painted;
+}
+
+#photos_fraisier_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/fraisier_1.png');
+}
+
+#photos_fraisier_1_agrandi
+{
+    background-image: url('../img/patisseries/fraisier_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_fraisier_2
+{
+    background-image: url('../img/patisseries/fraisier_2.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    pointer-events: painted;
+}
+
+#photos_fraisier_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/fraisier_2.png');
+}
+
+#photos_fraisier_2_agrandi
+{
+    background-image: url('../img/patisseries/fraisier_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_fraisier_3 
+{
+    background-image: url('../img/patisseries/fraisier_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 350px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    pointer-events: painted;
+}
+
+#photos_fraisier_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/fraisier_3.png');
+}
+
+#photos_fraisier_3_agrandi
+{
+    background-image: url('../img/patisseries/fraisier_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 490px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_fraisier_4
+{
+    background-image: url('../img/patisseries/fraisier_4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 350px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    pointer-events: painted;
+}
+
+#photos_fraisier_4:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/fraisier_4.png');
+}
+
+#photos_fraisier_4_agrandi
+{
+    background-image: url('../img/patisseries/fraisier_4_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 490px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#footer_fraisier
+{
+    margin-top: 2750px;
+}
+
+/*Photos Tarte Franboise*/
+#photos_gateau_2
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_gateau_2:hover
+{
+    background-size: 115%;
+}
+
+#photos_tarte_aux_fruits_1 
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_tarte_aux_fruits_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/tarte_aux_fruits_1_agrandi.png');
+}
+
+#photos_tarte_aux_fruits_1_agrandi
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_tarte_aux_fruits_2 
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_tarte_aux_fruits_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/tarte_aux_fruits_2_agrandi.png');
+}
+
+#photos_tarte_aux_fruits_2_agrandi
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_tarte_aux_fruits_3 
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_tarte_aux_fruits_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/tarte_aux_fruits_3_agrandi.png');
+}
+
+#photos_tarte_aux_fruits_3_agrandi
+{
+    background-image: url('../img/patisseries/tarte_aux_fruits_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Entremet*/
+#photos_gateau_3
+{
+    background-image: url('../img/patisseries/entremet_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_gateau_3:hover
+{
+    background-size: 115%;
+}
+
+#photos_entremet_1 
+{
+    background-image: url('../img/patisseries/entremet_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_entremet_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/entremet_1_agrandi.png');
+}
+
+#photos_entremet_1_agrandi
+{
+    background-image: url('../img/patisseries/entremet_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_entremet_2 
+{
+    background-image: url('../img/patisseries/entremet_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_entremet_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/entremet_2_agrandi.png');
+}
+
+#photos_entremet_2_agrandi
+{
+    background-image: url('../img/patisseries/entremet_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_entremet_3 
+{
+    background-image: url('../img/patisseries/entremet_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_entremet_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/entremet_3_agrandi.png');
+}
+
+#photos_entremet_3_agrandi
+{
+    background-image: url('../img/patisseries/entremet_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_entremet_4 
+{
+    background-image: url('../img/patisseries/entremet_4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_entremet_4:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/entremet_4_agrandi.png');
+}
+
+#photos_entremet_4_agrandi
+{
+    background-image: url('../img/patisseries/entremet_4_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_entremet_5 
+{
+    background-image: url('../img/patisseries/entremet_5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_entremet_5:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/entremet_5_agrandi.png');
+}
+
+#photos_entremet_5_agrandi
+{
+    background-image: url('../img/patisseries/entremet_5_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_entremet_6 
+{
+    background-image: url('../img/patisseries/entremet_6.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_entremet_6:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/entremet_6_agrandi.png');
+}
+
+#photos_entremet_6_agrandi
+{
+    background-image: url('../img/patisseries/entremet_6_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Pithiviers*/
+#photos_gateau_4
+{
+    background-image: url('../img/patisseries/pithiviers_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_pithiviers_1 
+{
+    background-image: url('../img/patisseries/pithiviers_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_pithiviers_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/pithiviers_1_agrandi.png');
+}
+
+#photos_pithiviers_1_agrandi
+{
+    background-image: url('../img/patisseries/pithiviers_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_pithiviers_2 
+{
+    background-image: url('../img/patisseries/pithiviers_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_pithiviers_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/pithiviers_2_agrandi.png');
+}
+
+#photos_pithiviers_2_agrandi
+{
+    background-image: url('../img/patisseries/pithiviers_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;  
+}
+
+#photos_pithiviers_3 
+{
+    background-image: url('../img/patisseries/pithiviers_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_pithiviers_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/pithiviers_3_agrandi.png');
+}
+
+#photos_pithiviers_3_agrandi
+{
+    background-image: url('../img/patisseries/pithiviers_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_gateau_4:hover
+{
+    background-size: 115%;
+}
+
+/*Photos Paris Brest*/
+#photos_gateau_5
+{
+    background-image: url('../img/patisseries/paris_brest_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_gateau_5:hover
+{
+    background-size: 115%;
+}
+
+#photos_paris_brest_1 
+{
+    background-image: url('../img/patisseries/paris_brest_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_paris_brest_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/paris_brest_1_agrandi.png');
+}
+
+#photos_paris_brest_1_agrandi
+{
+    background-image: url('../img/patisseries/paris_brest_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_paris_brest_2 
+{
+    background-image: url('../img/patisseries/paris_brest_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_paris_brest_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/paris_brest_2_agrandi.png');
+}
+
+#photos_paris_brest_2_agrandi
+{
+    background-image: url('../img/patisseries/paris_brest_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_paris_brest_3 
+{
+    background-image: url('../img/patisseries/paris_brest_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_paris_brest_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/paris_brest_3_agrandi.png');
+}
+
+#photos_paris_brest_3_agrandi
+{
+    background-image: url('../img/patisseries/paris_brest_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.laboratoire_de_patisseries_gateaux
+{
+    background-image: url('../img/patisseries/fonds_ecrans_gateaux.png');
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    background-size: 100%;
+    width: 100%;
+    height: 1500px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+.laboratoire_de_patisseries_fraisier 
+{
+    background-image: url('../img/patisseries/fonds_ecrans_gateaux.png');
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    background-size: 100%;
+    width: 100%;
+    height: 1800px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+.laboratoire_de_patisseries_entremet 
+{
+    background-image: url('../img/patisseries/fonds_ecrans_gateaux.png');
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    background-size: 100%;
+    width: 100%;
+    height: 2300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+.laboratoire_de_patisseries_macarons 
+{
+    background-image: url('../img/patisseries/fonds_ecrans_gateaux.png');
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    background-size: 100%;
+    width: 100%;
+    height: 2300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+.laboratoire_de_patisseries_3
+{
+    background-image: url('../img/laboratoire_de_patisserie/fond_ecran_laboratoire_de_patisserie_3.png');
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    background-size: 100%;    
+    width: 100%;
+    height: 1300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+/*Photos Eclair au chocolat*/
+#photos_patisserie_1
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_1:hover
+{
+    background-size: 115%;
+}
+
+#photos_eclair_au_chocolat_1 
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_eclair_au_chocolat_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/eclair_au_chocolat_1_agrandi.png');
+}
+
+#photos_eclair_au_chocolat_1_agrandi
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_eclair_au_chocolat_2 
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_eclair_au_chocolat_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/eclair_au_chocolat_2_agrandi.png');
+}
+
+#photos_eclair_au_chocolat_2_agrandi
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_eclair_au_chocolat_3 
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_eclair_au_chocolat_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/eclair_au_chocolat_3_agrandi.png');
+}
+
+#photos_eclair_au_chocolat_3_agrandi
+{
+    background-image: url('../img/patisseries/eclair_au_chocolat_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Barquette au marron*/
+#photos_patisserie_2
+{
+    background-image: url('../img/patisseries/barquette_au_marron_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_2:hover
+{
+    background-size: 115%;
+}
+
+#photos_barquette_au_marron_1
+{
+    background-image: url('../img/patisseries/barquette_au_marron_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_barquette_au_marron_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/barquette_au_marron_1_agrandi.png');
+}
+
+#photos_barquette_au_marron_1_agrandi
+{
+    background-image: url('../img/patisseries/barquette_au_marron_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_barquette_au_marron_2
+{
+    background-image: url('../img/patisseries/barquette_au_marron_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_barquette_au_marron_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/barquette_au_marron_2_agrandi.png');
+}
+
+#photos_barquette_au_marron_2_agrandi
+{
+    background-image: url('../img/patisseries/barquette_au_marron_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_barquette_au_marron_3
+{
+    background-image: url('../img/patisseries/barquette_au_marron_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_barquette_au_marron_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/barquette_au_marron_3_agrandi.png');
+}
+
+#photos_barquette_au_marron_3_agrandi
+{
+    background-image: url('../img/patisseries/barquette_au_marron_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+
+/*Photos Baba au rhum*/
+#photos_patisserie_3
+{
+    background-image: url('../img/patisseries/baba_au_rhum_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_3:hover
+{
+    background-size: 115%;
+}
+
+#photos_baba_au_rhum_1
+{
+    background-image: url('../img/patisseries/baba_au_rhum_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_baba_au_rhum_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/baba_au_rhum_1_agrandi.png');
+}
+
+#photos_baba_au_rhum_1_agrandi
+{
+    background-image: url('../img/patisseries/baba_au_rhum_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_baba_au_rhum_2
+{
+    background-image: url('../img/patisseries/baba_au_rhum_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_baba_au_rhum_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/baba_au_rhum_2_agrandi.png');
+}
+
+#photos_baba_au_rhum_2_agrandi
+{
+    background-image: url('../img/patisseries/baba_au_rhum_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_baba_au_rhum_3
+{
+    background-image: url('../img/patisseries/baba_au_rhum_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_baba_au_rhum_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/baba_au_rhum_3_agrandi.png');
+}
+
+#photos_baba_au_rhum_3_agrandi
+{
+    background-image: url('../img/patisseries/baba_au_rhum_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Macarons*/
+#photos_patisserie_4
+{
+    background-image: url('../img/patisseries/macarons_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_4:hover
+{
+    background-size: 115%;
+}
+
+#photos_macarons_1
+{
+    background-image: url('../img/patisseries/macarons_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_macarons_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/macarons_1_agrandi.png');
+}
+
+#photos_macarons_1_agrandi
+{
+    background-image: url('../img/patisseries/macarons_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_macarons_2
+{
+    background-image: url('../img/patisseries/macarons_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_macarons_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/macarons_2_agrandi.png');
+}
+
+#photos_macarons_2_agrandi
+{
+    background-image: url('../img/patisseries/macarons_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_macarons_3
+{
+    background-image: url('../img/patisseries/macarons_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_macarons_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/macarons_3_agrandi.png');
+}
+
+#photos_macarons_3_agrandi
+{
+    background-image: url('../img/patisseries/macarons_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_macarons_4
+{
+    background-image: url('../img/patisseries/macarons_4.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_macarons_4:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/macarons_4_agrandi.png');
+}
+
+#photos_macarons_4_agrandi
+{
+    background-image: url('../img/patisseries/macarons_4_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_macarons_5
+{
+    background-image: url('../img/patisseries/macarons_5.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_macarons_5:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/macarons_5_agrandi.png');
+}
+
+#photos_macarons_5_agrandi
+{
+    background-image: url('../img/patisseries/macarons_5_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Mille Feuille*/
+#photos_patisserie_5
+{
+    background-image: url('../img/patisseries/mille_feuille_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_5:hover
+{
+    background-size: 115%;
+}
+
+#photos_mille_feuille_1
+{
+    background-image: url('../img/patisseries/mille_feuille_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_mille_feuille_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/mille_feuille_1_agrandi.png');
+}
+
+#photos_mille_feuille_1_agrandi
+{
+    background-image: url('../img/patisseries/mille_feuille_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_mille_feuille_2
+{
+    background-image: url('../img/patisseries/mille_feuille_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_mille_feuille_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/mille_feuille_2_agrandi.png');
+}
+
+#photos_mille_feuille_2_agrandi
+{
+    background-image: url('../img/patisseries/mille_feuille_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_mille_feuille_3
+{
+    background-image: url('../img/patisseries/mille_feuille_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_mille_feuille_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/mille_feuille_3_agrandi.png');
+}
+
+#photos_mille_feuille_3_agrandi
+{
+    background-image: url('../img/patisseries/mille_feuille_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Choux à la crème*/
+#photos_patisserie_6
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_6:hover
+{
+    background-size: 115%;
+}
+
+#photos_choux_a_la_creme_1
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_choux_a_la_creme_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/choux_a_la_creme_1_agrandi.png');
+}
+
+#photos_choux_a_la_creme_1_agrandi
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_choux_a_la_creme_2
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_choux_a_la_creme_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/choux_a_la_creme_2_agrandi.png');
+}
+
+#photos_choux_a_la_creme_2_agrandi
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_choux_a_la_creme_3
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_choux_a_la_creme_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/choux_a_la_creme_3_agrandi.png');
+}
+
+#photos_choux_a_la_creme_3_agrandi
+{
+    background-image: url('../img/patisseries/choux_a_la_creme_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos Tarte citron meringuée*/
+#photos_patisserie_7
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_7:hover
+{
+    background-size: 115%;
+}
+
+#photos_tarte_citron_meringuee_1
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_tarte_citron_meringuee_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/tarte_citron_meringuee_1_agrandi.png');
+}
+
+#photos_tarte_citron_meringuee_1_agrandi
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_tarte_citron_meringuee_2
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_tarte_citron_meringuee_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/tarte_citron_meringuee_2_agrandi.png');
+}
+
+#photos_tarte_citron_meringuee_2_agrandi
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_tarte_citron_meringuee_3
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_tarte_citron_meringuee_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/tarte_citron_meringuee_3_agrandi.png');
+}
+
+#photos_tarte_citron_meringuee_3_agrandi
+{
+    background-image: url('../img/patisseries/tarte_citron_meringuee_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+/*Photos tarte Choux caramel*/
+#photos_patisserie_8
+{
+    background-image: url('../img/patisseries/choux_caramel_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 225px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    pointer-events: painted;
+}
+
+#photos_patisserie_8:hover
+{
+    background-size: 115%;
+}
+
+#photos_choux_caramel_1
+{
+    background-image: url('../img/patisseries/choux_caramel_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_choux_caramel_1:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/choux_caramel_1_agrandi.png');
+}
+
+#photos_choux_caramel_1_agrandi
+{
+    background-image: url('../img/patisseries/choux_caramel_1_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_choux_caramel_2
+{
+    background-image: url('../img/patisseries/choux_caramel_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_choux_caramel_2:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/choux_caramel_2_agrandi.png');
+}
+
+#photos_choux_caramel_2_agrandi
+{
+    background-image: url('../img/patisseries/choux_caramel_2_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+#photos_choux_caramel_3
+{
+    background-image: url('../img/patisseries/choux_caramel_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 380px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    pointer-events: painted;
+}
+
+#photos_choux_caramel_3:hover
+{
+    background-size: 100%;
+    background-image: url('../img/patisseries/choux_caramel_3_agrandi.png');
+}
+
+#photos_choux_caramel_3_agrandi
+{
+    background-image: url('../img/patisseries/choux_caramel_3_agrandi.png');
+    background-repeat: no-repeat;
+    background-size: 920px;
+    width: 200%;
+    height: 750px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 3;    
+}
+
+.laboratoire_de_patisseries_4
+{
+    background-image: url('../img/laboratoire_de_patisserie/fond_ecran_laboratoire_de_patisserie_4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: inherit;
+    background-size: 100%;    
+    width: 100%;
+    height: 1300px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+/*Calque transparent lors du clic sur une miniature*/
+#arrierePlan
+{
+    position: fixed;
+    background-image: url("../img/patisseries/couleur_arriere_plan.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0.7;
+    z-index: 3;
+    pointer-events: painted;
+    margin-top: -300px;
+}
+
+/*Recettes gâteaux et pâtisseries*/
+.recettes
+{
+    font-size: 22px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+/*Footer*/
+#bas_de_page
+{
+    background-image: url('../img/patisseries/footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 525px;
+    margin-top: 840px;
+    margin-left: -7px;
+}
+
+/*Textes bas de page*/
+.textes_bas_de_page
+{
+    font-family: "rightland";
+    color: white;
+    margin-top: -78px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px #1d2124;
+}
+
+/*Textes normal*/
+span
+{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/*Lien Mensions Légales*/
+span a
+{
+    color: #ffffff;
+}
+
+span a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#logo_footer
+{
+    background-image: url('../img/Logo_delices_de_gui_footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105px;
+    height: 130px;
+    margin-top: -125px;
+    margin-left: 767px;
+}
+
+/*Textes à propos*/
+.textes_a_propos
+{
+    margin-top: -40px;
+}
+
+/*Mensions Légales*/
+#footer_mensions_legales
+{
+    margin-top: -800px;
+}
+
+.mensions_legales .h-2 
+{
+    margin-top: 160px;
+}
+
+.mensions_legales #chantilly_4 
+{
+    background-size: 550px;
+    margin-top: -205px;
+}
+
+/*Responsive (Media Queries)*/
+@media (max-width: 2560px)
+{
+    /*Logo Les délices de Gui*/
+    #logo 
+    {
+        background-size: 2560px;
+        height: 920px;
+    }
+
+    /*identifications inscription | connexion*/
+    #identifications a 
+    {
+        font-size: 28px;
+    }
+
+    #identifications a:hover
+    {
+        color: #117a8b;
+    }
+
+    #identifications ul 
+    {
+        margin-top: -270px;
+        right: 85px;
+    }
+
+    /*Barre séparation identifications inscription | connexion*/
+    .barre
+    {
+        opacity: 1;   
+        margin-right: 16px;
+    }
+
+    /*Menu Header*/
+    nav a 
+    {
+        font-size: 45px;
+    }
+
+    li 
+    {
+        margin-top: 45px;
+    }
+
+    /*Bandeau*/
+    .ensemble_de_gateau 
+    {
+        background-size: 2565px;
+        margin-top: -310px;
+        height: 1550px;
+    }
+
+    .row 
+    { 
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .col-sm, .col-sm-4 
+    {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .laboratoire_de_patisseries 
+    {
+        background-size: 100%;
+        background-position-y: inherit;
+        height: 2200px;
+        margin-top: -150px;
+    }
+
+    .laboratoire_de_patisseries_2
+    {
+        background-size: 100%;
+        background-position-y: inherit;
+        height: 1900px;
+        margin-top: -150px;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 100%;
+        background-position-y: inherit;
+        height: 1900px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 100%;
+        background-position-y: inherit;
+        height: 1900px;
+    }
+
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 150%;
+        height: 1950px;
+    }
+
+    /*texte de niveau II*/
+    .h-2 
+    {
+        font-size: 100px;
+        margin-bottom: -230px;
+        text-shadow: -2px 1px 5px#6c757d;
+    }
+
+    p
+    {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    /*texte de niveau III*/
+    .h-3 
+    {
+        font-size: 85px;
+        text-shadow: -2px 1px 5px#6c757d;
+    }
+
+    /*texte de niveau V*/
+    .h-5 
+    {
+        font-size: 85px;
+        margin-bottom: -225px;
+        margin-top: 75px;
+        text-shadow: -2px 1px 5px#6c757d;
+    }
+
+    /*texte de niveau VI*/
+    .h-6
+    {
+        font-size: 55px;
+        margin-top: 35px;
+        margin-bottom: -25px;        
+        text-shadow: 2px 1px 4px #adb5bd;
+    }
+
+    /*Bouton voir la recette*/
+    .voir_recette
+    {
+        margin-top: -10px;
+        pointer-events: painted;
+    }
+
+    .voir_recette a 
+    {
+        color: #17a2b8;
+        font-weight: bold;
+        font-family: "rightland";
+        font-size: 50px;
+        letter-spacing: 1px;
+        text-shadow: -2px 1px 20px #009dfff2;
+    }
+    
+    .voir_recette a:hover
+    {
+        color: #117a8b;
+        text-decoration: none;
+    }
+
+    /*Chantilly*/
+    #chantilly
+    {
+        margin-top: -250px;
+    }
+
+    #chantilly_3 
+    {
+        background-size: 450px;
+        width: 100%;
+        height: 180px;
+        margin-top: 60px;
+        margin-bottom: -20px;
+    }
+
+    #chantilly_4 
+    {
+        background-size: 650px;
+    }
+
+    /*Cartouche blanc*/
+    .cartouche_blanc 
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-bottom: 70px;
+        margin-top: 250px;
+    }
+
+    .cartouche_blanc_2
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-bottom: 70px;
+        margin-top: 550px;
+    }
+
+    .cartouche_blanc_3
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-bottom: 70px;
+        margin-top: 350px;
+    }
+
+    .cartouche_blanc_4
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 20px;
+        padding-bottom: 70px;
+        margin-top: 350px;
+    }
+
+    .cartouche_blanc_fraisier 
+    {
+        margin-top: 300px;
+    }
+
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5
+    {
+        width: 100%;
+        height: 250px;
+    }
+
+    #photos_gateau_1:hover
+    {
+        background-image: url('../img/patisseries/fraisier_1_agrandi.png'); 
+        background-size: 100%;       
+
+    }
+
+    #photos_gateau_2:hover
+    {
+        background-image: url('../img/patisseries/tarte_aux_fruits_1_agrandi.png'); 
+        background-size: 100%;       
+    }
+
+    #photos_gateau_3:hover
+    {
+        background-image: url('../img/patisseries/entremet_1_agrandi.png'); 
+        background-size: 100%;       
+    }
+
+    #photos_gateau_4:hover
+    {
+        background-image: url('../img/patisseries/pithiviers_1_agrandi.png'); 
+        background-size: 100%;       
+    }
+
+    #photos_gateau_5:hover
+    {
+        background-image: url('../img/patisseries/paris_brest_1_agrandi.png'); 
+        background-size: 100%;       
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        width: 100%;
+        height: 250px;
+    }
+
+    #photos_patisserie_1:hover
+    {          
+        background-image: url('../img/patisseries/eclair_au_chocolat_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_2:hover 
+    {       
+        background-image: url('../img/patisseries/barquette_au_marron_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_3:hover 
+    {       
+        background-image: url('../img/patisseries/baba_au_rhum_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_4:hover 
+    {       
+        background-image: url('../img/patisseries/macarons_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_5:hover 
+    {       
+        background-image: url('../img/patisseries/mille_feuille_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_6:hover 
+    {       
+        background-image: url('../img/patisseries/choux_a_la_creme_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_7:hover 
+    {       
+        background-image: url('../img/patisseries/tarte_citron_meringuee_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_patisserie_8:hover 
+    {       
+        background-image: url('../img/patisseries/choux_caramel_1_agrandi.png');  
+        background-size: 100%;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4
+    {
+        background-size: 100%;
+        width: 100%;
+        height: 380px;
+    }
+
+    #photos_fraisier_1_agrandi, #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_1_agrandi, #photos_entremet_2_agrandi,
+    #photos_pithiviers_1_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_1_agrandi, #photos_paris_brest_2_agrandi, #photos_eclair_au_chocolat_1_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_baba_au_rhum_2_agrandi,
+    #photos_macarons_1_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_1_agrandi, #photos_mille_feuille_2_agrandi, #photos_choux_a_la_creme_1_agrandi, 
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_1_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        background-size: 1250px;
+        height: 1100px;
+        margin-top: 310px;
+        background-position-x: center;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_fraisier_4_agrandi, #photos_tarte_aux_fruits_3_agrandi,#photos_entremet_3_agrandi, #photos_entremet_4_agrandi, #photos_pithiviers_3_agrandi, 
+    #photos_paris_brest_3_agrandi, #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, 
+    #photos_macarons_4_agrandi, #photos_macarons_5_agrandi, #photos_mille_feuille_3_agrandi, #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi,
+    #photos_choux_caramel_3_agrandi
+
+    {
+        background-size: 1250px;
+        height: 1100px;
+        margin-top: 700px;
+        background-position-x: center;
+    }
+
+    #photos_entremet_5_agrandi, #photos_entremet_6_agrandi, #photos_macarons_5_agrandi
+    {
+        background-size: 1250px;
+        height: 1100px;
+        margin-top: 1100px;
+        background-position-x: center;
+    }
+
+    /*Bouton voir la recette*/
+    .voir_recette
+    {
+        margin-top: -10px;
+        pointer-events: painted;
+    }
+
+    .voir_recette a 
+    {
+        color: #17a2b8;
+        font-weight: bold;
+        font-family: "rightland";
+        font-size: 50px;
+        letter-spacing: 1px;
+        text-shadow: -2px 1px 20px #009dfff2;
+    }
+
+    /*Recettes des gâteaux et pâtisseries*/
+    .recettes 
+    {
+        font-size: 35px;
+        margin-top: -50px;
+        margin-bottom: 75px;
+    }
+
+    button 
+    {
+        padding: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: 2567px;
+        height: 700px;
+        margin-top: 1700px;
+        margin-left: -7px;
+    }
+
+    .textes_bas_de_page 
+    {
+        margin-top: -180px;
+    }
+
+    span 
+    {
+        font-family: sans-serif;
+        font-size: 22px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 1500px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1500px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 1900px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2000px;
+    }
+
+    #footer_gateaux
+    {
+        margin-top: 1200px;
+    }
+
+    #footer_patisseries
+    {
+        margin-top: 1600px;
+    }
+
+    /*Mensions Légales*/
+    .mensions_legales .h-2 
+    {
+        margin-top: 380px;
+    }
+    
+    .mensions_legales #chantilly_4 
+    {
+        background-size: 900px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1920px)
+{
+    #logo 
+    {
+        background-size: 1910px;
+        height: 680px;
+    }
+
+    /*identifications inscription | connexion*/
+    #identifications a 
+    {
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #identifications ul 
+    {
+        margin-top: -220px;
+        right: 45px;
+    }
+
+    /*Barre séparation identifications inscription | connexion*/
+    .barre
+    {
+        margin-right: 0px;
+    }
+
+    /*Menu Header*/
+    nav a 
+    {
+        font-size: 30px;
+    }
+
+    li 
+    {
+        margin-top: -45px;
+        z-index: 1;
+    }
+
+    /*Bandeau*/
+    .ensemble_de_gateau 
+    {
+        background-size: unset;
+        margin-top: -660px;
+        height: 1150px;
+    }
+
+    .laboratoire_de_patisseries
+    {
+        background-size: 100%;
+        height: 1300px;
+        margin-top: -50px;
+        margin-bottom: 100px;
+        background-position-y: inherit;
+    }
+
+    .laboratoire_de_patisseries_2 
+    {
+        display: contents;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        display: contents;
+    }
+
+    .laboratoire_de_patisseries_4 
+    {
+        background-size: 100%;
+        height: 1200px;
+        margin-top: 20px;
+    }
+
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5
+    {
+        background-size: 100%;
+        width: 100%;
+        height: 235px;
+    }
+
+    #photos_gateau_1:hover
+    {
+        background-image: url('../img/patisseries/fraisier_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_gateau_2:hover
+    {
+        background-image: url('../img/patisseries/tarte_aux_fruits_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_gateau_3:hover
+    {
+        background-image: url('../img/patisseries/entremet_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_gateau_4:hover
+    {
+        background-image: url('../img/patisseries/pithiviers_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_gateau_5:hover
+    {
+        background-image: url('../img/patisseries/paris_brest_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        background-size: 100%;
+        width: 100%;
+        height: 235px;
+    }
+
+    #photos_patisserie_1:hover
+    {       
+        background-image: url('../img/patisseries/eclair_au_chocolat_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_2:hover
+    {       
+        background-image: url('../img/patisseries/barquette_au_marron_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_3:hover
+    {       
+        background-image: url('../img/patisseries/baba_au_rhum_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_4:hover
+    {       
+        background-image: url('../img/patisseries/macarons_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_5:hover
+    {       
+        background-image: url('../img/patisseries/mille_feuille_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_6:hover
+    {       
+        background-image: url('../img/patisseries/choux_a_la_creme_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_7:hover
+    {       
+        background-image: url('../img/patisseries/tarte_citron_meringuee_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_patisserie_8:hover
+    {       
+        background-image: url('../img/patisseries/choux_caramel_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    .laboratoire_de_patisseries_gateaux, .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 100%;
+        height: 1500px;
+        margin-top: 20px;
+    }
+
+    .laboratoire_de_patisseries_entremet, .laboratoire_de_patisseries_macarons
+    {
+        background-size: 100%;
+        height: 1800px;
+        margin-top: 20px;
+    }
+
+    #footer_patisseries 
+    {
+        margin-top: -890px;
+    }
+
+    #texte_accueil 
+    {
+        margin-top: -50px;
+    }
+
+    .row 
+    {
+        margin-top: 0px;
+    }
+
+    p 
+    {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .paragraphe_p 
+    {
+        margin-top: -150px;
+    }
+
+    /*Chantilly*/
+    #chantilly
+    {
+        margin-top: -210px;
+    }
+
+    #chantilly_2
+    {
+        background-size: 250px;
+        width: 100%;
+        height: 300px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    
+    #chantilly_3
+    {
+        background-size: 450px;
+
+    }
+    
+    #chantilly_4
+    {
+        background-size: 480px;
+        width: 100%;
+        height: 300px;
+        margin-top: -210px;
+        margin-bottom: -70px;
+    }
+
+    /*texte de niveau II*/
+    .h-2 
+    {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    /*texte de niveau III*/
+    .h-3 
+    {
+        font-size: 55px;
+    }
+
+    /*texte de niveau V*/ 
+    .h-5 
+    {
+        font-size: 55px;
+        margin-bottom: -200px;
+        margin-top: 75px;
+    }
+
+    /*texte de niveau VI*/ 
+    .h-6 
+    {
+        font-size: 35px;
+        margin-bottom: 0px;
+    }
+
+    /*Cartouches blanc*/
+    .cartouche_blanc 
+    {
+        margin-top: 105px;
+    }
+
+    .cartouche_blanc_2 
+    {
+        margin-top: 170px;
+        padding-right: 20px;
+    }
+
+    .cartouche_blanc_3
+    {
+        margin-top: 170px;
+        padding-right: 20px;
+    }
+
+    .cartouche_blanc_4
+    {
+        margin-top: 120px;
+        padding-right: 20px;
+    }
+
+    .cartouche_blanc_fraisier 
+    {
+        margin-top: 120px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4
+    {
+        background-size: 100%;
+        width: 100%;
+        height: 365px;
+        cursor: pointer;
+    }
+
+    #photos_fraisier_1:hover
+    {
+        background-image: url('../img/patisseries/fraisier_1_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_fraisier_2:hover
+    {
+        background-image: url('../img/patisseries/fraisier_2_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_fraisier_3:hover
+    {
+        background-image: url('../img/patisseries/fraisier_3_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_fraisier_4:hover
+    {
+        background-image: url('../img/patisseries/fraisier_4_agrandi.png');
+        background-size: 100%;
+    }
+
+    #photos_fraisier_1_agrandi, #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_1_agrandi, #photos_entremet_2_agrandi,
+    #photos_pithiviers_1_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_1_agrandi, #photos_paris_brest_2_agrandi, #photos_eclair_au_chocolat_1_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_baba_au_rhum_2_agrandi,
+    #photos_macarons_1_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_1_agrandi, #photos_mille_feuille_2_agrandi, #photos_choux_a_la_creme_1_agrandi, 
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_1_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        background-size: 920px;
+        width: 200%;
+        height: 750px;
+        margin-top: 185px;
+        background-position-x: center;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_fraisier_4_agrandi, #photos_tarte_aux_fruits_3_agrandi,#photos_entremet_3_agrandi, #photos_entremet_4_agrandi, #photos_pithiviers_3_agrandi, 
+    #photos_paris_brest_3_agrandi, #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, 
+    #photos_macarons_4_agrandi, #photos_macarons_5_agrandi, #photos_mille_feuille_3_agrandi, #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi,
+    #photos_choux_caramel_3_agrandi
+
+    {
+        background-size: 920px;
+        width: 200%;
+        height: 750px;
+        margin-top: 585px;
+        background-position-x: center;
+    }
+
+    #photos_entremet_5_agrandi, #photos_entremet_6_agrandi, #photos_macarons_5_agrandi
+    {
+        background-size: 920px;
+        height: 1100px;
+        margin-top: 990px;
+        background-position-x: center;
+    }
+
+    /*Bouton voir la recette*/
+    .voir_recette
+    {
+        margin-top: -110px;
+        pointer-events: painted;
+    }
+
+    .voir_recette a 
+    {
+        color: #17a2b8;
+        font-weight: bold;
+        font-family: "rightland";
+        font-size: 30px;
+        letter-spacing: 1px;
+        text-shadow: -2px 1px 20px #009dfff2;
+    }
+
+    /*Recettes*/
+    .recettes 
+    {
+        font-size: 22px;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+
+    button 
+    {
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: 100%;
+        height: 480px;
+        margin-top: 930px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_gateaux 
+    {
+        margin-top: -890px;
+    }
+
+    .textes_bas_de_page 
+    {
+        margin-top: -140px;
+    }
+
+    span 
+    {
+        font-family: sans-serif;
+        font-size: 16px;
+        pointer-events: painted;
+    }
+
+    #footer_fraisier, #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1200px;
+    }
+
+    #footer_entremet, #footer_macarons
+    {
+        margin-top: 1600px;
+    }
+
+    /*Mensions Légales*/
+    .mensions_legales .h-2 
+    {
+        margin-top: 160px;
+    }
+
+    .mensions_legales #chantilly_4 
+    {
+        background-size: 550px;
+        margin-top: -205px;
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 1782px)
+{
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 240%;
+        height: 2200px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: unset;
+        height: 525px;
+        margin-top: 950px;
+    }
+}
+
+@media (max-width: 1660px)
+{    
+    /*Image de fond*/
+    .laboratoire_de_patisseries_gateaux, .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 100%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_entremet, .laboratoire_de_patisseries_macarons
+    {
+        background-size: 100%;
+        height: 2000px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 120%;
+    }
+
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 200px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 200px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 1300px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1300px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 1700px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 1700px;
+    }
+}
+
+@media (max-width: 1570px)
+{
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 230px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 230px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: unset;
+        height: 525px;
+        margin-top: 930px;
+    }
+}
+
+@media (max-width: 1520px)
+{    
+    /*Image de fond*/
+    .laboratoire_de_patisseries_3 
+    {
+        background-size: 120%;
+        height: 1600px;
+    }
+
+    /*Cartouches de blanc*/
+    .cartouche_blanc_fraisier 
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (max-width: 1505px)
+{
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: unset;
+        height: 525px;
+        margin-top: 950px;
+    }
+}
+
+@media (max-width: 1440px)
+{
+    /*Cartouche de blanc*/
+    .cartouche_blanc, .cartouche_blanc_2, .cartouche_blanc_3, .cartouche_blanc_4
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 140%;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 160%;
+    }
+
+    /*Photos gâteaux et pâtisseries*/
+    #photos_fraisier_3, #photos_fraisier_4
+    {
+        margin-top: -10px;
+    }
+
+    #photos_tarte_aux_fruits_3, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6,   
+    #photos_pithiviers_3, #photos_paris_brest_3, #photos_eclair_au_chocolat_3 #photos_barquette_au_marron_3, #photos_baba_au_rhum_3, 
+    #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_3, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_3, #photos_choux_caramel_3 
+    {
+        margin-top: -30px;
+    }
+
+    /*Photos gâteaux et pâtisseries agrandi*/
+    #photos_fraisier_1_agrandi, #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_1_agrandi, #photos_entremet_2_agrandi,
+    #photos_pithiviers_1_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_1_agrandi, #photos_paris_brest_2_agrandi, #photos_eclair_au_chocolat_1_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_baba_au_rhum_2_agrandi,
+    #photos_macarons_1_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_1_agrandi, #photos_mille_feuille_2_agrandi, #photos_choux_a_la_creme_1_agrandi, 
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_1_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        background-size: 920px;
+        width: 200%;
+        height: 750px;
+        margin-top: 165px;
+        background-position-x: center;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_fraisier_4_agrandi, #photos_tarte_aux_fruits_3_agrandi,#photos_entremet_3_agrandi, #photos_entremet_4_agrandi, #photos_pithiviers_3_agrandi, 
+    #photos_paris_brest_3_agrandi, #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, 
+    #photos_macarons_4_agrandi, #photos_macarons_5_agrandi, #photos_mille_feuille_3_agrandi, #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi,
+    #photos_choux_caramel_3_agrandi
+
+    {
+        background-size: 920px;
+        width: 200%;
+        height: 750px;
+        margin-top: 515px;
+        background-position-x: center;
+    }
+
+    #photos_entremet_5_agrandi, #photos_entremet_6_agrandi, #photos_macarons_5_agrandi
+    {
+        background-size: 920px;
+        height: 1100px;
+        margin-top: 870px;
+        background-position-x: center;
+    }
+}
+
+@media (max-width: 1380px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries_gateaux, .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 100%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_entremet, .laboratoire_de_patisseries_macarons
+    {
+        background-size: 100%;
+        height: 2000px;
+    }
+}
+
+@media (max-width: 1300px)
+{   
+    /*Image de fond*/
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 120%;
+        height: 1400px;
+    }
+
+    .laboratoire_de_patisseries_3 
+    {
+        background-size: 140%;
+        height: 1600px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 160%;
+    }
+
+    /*Cartouches de blanc*/
+    .cartouche_blanc_fraisier 
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 1200px)
+{    
+    /*Image de fond*/
+    .laboratoire_de_patisseries_gateaux, .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 100%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_entremet, .laboratoire_de_patisseries_macarons
+    {
+        background-size: 100%;
+        height: 2000px;
+    }
+
+    /*Cartouches de blanc*/
+    .cartouche_blanc_fraisier 
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4
+    {
+        background-size: 100%;
+        height: 270px;
+    }
+
+    #photos_fraisier_1:hover, #photos_fraisier_2:hover, #photos_fraisier_3:hover, #photos_fraisier_4:hover
+    {
+        background-size: 100%;
+    }
+
+    /*Agrandissements d'images*/
+    #photos_fraisier_1_agrandi, #photos_fraisier_2_agrandi
+    {
+        background-size: 920px;
+        width: 200%;
+        height: 750px;
+        margin-top: 215px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_fraisier_4_agrandi
+    {
+        background-size: 920px;
+        width: 200%;
+        height: 750px;
+        margin-top: 710px
+    }
+
+    /*Footer*/
+    #footer_fraisier 
+    {
+        margin-top: 1200px;
+    }
+}
+
+@media (max-width: 1199px)
+{    
+    /*Image de fond*/
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 205%;
+        height: 3000px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 140%;
+        height: 2500px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 180%;
+        height: 4200px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 180%;
+        height: 3700px;
+    }
+
+    /*Laboratoire de pâtisserie*/
+    .laboratoire_de_patisseries_2
+    {
+        background-size: 280%;
+        height: 3550px;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 370%;
+        height: 4850px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 250%;
+        height: 4800px;
+    }
+    
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 240%;
+        height: 7000px;
+    }
+
+    /*Photos fraisier*/
+    #photos_gateau_1,#photos_gateau_2,#photos_gateau_3,#photos_gateau_4,#photos_gateau_5
+    {
+        height: 620px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 620px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3,
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        background-size: 100%;
+        height: 530px;
+        margin-top: 50px;
+    }
+
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 255px;
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 835px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1415px;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1995px;
+    }
+
+    #photos_entremet_5_agrandi, #photos_macarons_5_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 2575px;
+    }
+
+    #photos_entremet_6_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 3155px;
+    }
+
+    /*Footer*/  
+    #footer_fraisier
+    {
+        margin-top: 2700px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 2200px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 4000px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 3400px;
+    }
+}
+
+@media (max-width: 1195px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 115%;
+    }
+
+    .laboratoire_de_patisseries_3 
+    {
+        background-size: 160%;
+        height: 1600px;
+    }
+    
+    /*Image de fond*/
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 205%;
+        height: 3000px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 205%;
+        height: 2500px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 225%;
+        height: 4200px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 225%;
+        height: 3600px;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    /*Informations commentaires*/
+    .informations_commentaires
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .commentaires 
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    /*Agencement photos fraisier*/
+    #photos_fraisier_1_agrandi 
+    {
+        width: 90%;
+        margin-left: 3%;
+        margin-top: 330px;
+    }
+
+    #photos_fraisier_2_agrandi 
+    {
+        margin-top: 725px;
+    }
+
+    #photos_fraisier_3_agrandi 
+    {
+        margin-top: 1345px;
+    }
+
+    #photos_fraisier_4_agrandi 
+    {
+        margin-top: 1565px;
+    }
+}
+
+@media (max-width: 1075px)
+{
+    /*Identifications Inscription | Connexion*/
+    #identifications ul 
+    {
+        flex-direction: column;
+    }
+
+    #identifications li 
+    {
+        margin-top: -10px;
+    }
+    
+    /*Identifications déconnexion*/
+    .deconnexion 
+    {
+        right: 45px;
+    }
+
+    /*Barre séparation identifications inscription | connexion*/
+    .barre
+    {
+        opacity: 0;
+    }
+
+    /*Image de fond*/
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 120%;
+        height: 1300px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 150%;
+        height: 1200px;
+    }
+
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 220%;
+        height: 4800px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4
+    {
+        height: 480px;
+    }
+}
+
+@media (max-width: 1045px)
+{
+    /*Footer*/
+    #footer_fraisier 
+    {
+        margin-top: 4450px;
+    }
+}
+
+@media (max-width: 1025px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 130%;
+    }
+
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 140%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 240%;
+        height: 4800px;
+    }
+}
+
+@media (max-width: 1024px)
+{  
+    /*Cartouche de blanc*/
+    .laboratoire_de_patisseries 
+    {
+        background-position: right;
+        background-size: 130%;
+        height: 1400px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 250%;
+        height: 5000px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1_agrandi 
+    {
+        margin-top: 330px;
+    }
+
+    #photos_fraisier_2_agrandi 
+    {
+        margin-top: 835px;
+    }
+
+    #photos_fraisier_3_agrandi 
+    {
+        margin-top: 1360px;
+    }
+
+    #photos_fraisier_4_agrandi 
+    {
+        margin-top: 1890px;
+    }
+
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        background-size: 80%;
+        height: 280px;
+        margin-top: -20px;
+    }
+
+    /*Paragraphes cartouches de blanc*/
+    .paragraphe_p 
+    {
+        text-align: center;
+        color: #343a40;
+        margin-top: -105px;
+    }
+
+    /*Titre de niveau III*/
+    .h-3 
+    {
+        font-family: "rightland";
+        color: #343a40;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1105px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 170%;
+        height: 1350px;
+    }
+
+    .laboratoire_de_patisseries_3 
+    {
+        background-size: 180%;
+        height: 1600px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 170%;
+        height: 1300px;
+    }
+
+    /*Image de fond*/
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2700px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 2200px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 3500px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 3200px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 250%;
+        height: 4400px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 240%;
+        height: 6000px;
+    }
+
+    /*Espacement entre les photos gâteaux et patîsseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 490px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 490px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 430px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: unset;
+        height: 525px;
+        margin-top: 1050px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 2400px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1900px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 3300px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2900px;
+    }
+}
+
+@media (max-width: 925px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 260%;
+        height: 4500px;
+    }
+}
+
+@media (max-width: 911px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 160%;
+        height: 1500px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4
+    {
+        height: 390px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        background-size: unset;
+        height: 525px;
+        margin-top: 1050px;
+    }
+
+    #logo_footer 
+    {
+        margin-left: 667px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 200%;
+        height: 1600px;
+    }
+
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 300%;
+        height: 4500px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4
+    {
+        height: 370px;
+    }
+
+    /*Footer*/
+    #footer_fraisier 
+    {
+        margin-top: 4150px;
+    }
+}
+
+@media (max-width: 807px)
+{
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 180%;
+        height: 1500px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 250%;
+        height: 3800px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        height: 5300px;
+    }
+
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 400px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 400px;
+    }
+
+    /*Informations commentaires*/
+    .informations_commentaires
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .commentaires 
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #logo_footer 
+    {
+        margin-left: 625px;
+    }
+}
+
+@media (max-width: 798px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 190%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 320%;
+        height: 4600px;
+    }
+
+    /*Cartouche de blanc*/
+    .cartouche_blanc 
+    {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    /*Footer*/
+    #footer_fraisier 
+    {
+        margin-top: 4400px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    /*Identifications Inscription | Connexion*/
+    #identifications ul 
+    {
+        right: 20px;
+    }
+
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 190%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 170%;
+        height: 1400px;
+    }
+
+    /*Image de fond*/
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2500px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 2000px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 3400px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 3000px;
+    }
+
+    /*Cartouche de blanc*/
+    .laboratoire_de_patisseries 
+    {
+        height: 1310px;
+    }
+
+    .cartouche_blanc_fraisier 
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    /*Agencement photos*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        margin-top: 295px;
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        margin-top: 730px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi
+    {
+        margin-top: 1157px;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi
+    {
+        margin-top: 1587px;
+    }
+
+    #photos_entremet_5_agrandi, #photos_macarons_5_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 2018px;
+    }
+
+    #photos_entremet_6_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 2447px;
+    }
+
+    /*Chantilly*/
+    #chantilly_4
+    {
+        background-size: 380px;
+    }
+
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        background-size: 100%;
+        height: 280px;
+        margin-top: 20px;
+    }
+
+    /*Paragraphes cartouches de blanc*/
+    .paragraphe_p 
+    {
+        text-align: center;
+        color: #343a40;
+        margin-top: -120px;
+    }
+
+    /*Titre de niveau III*/
+    .h-3
+    {
+        font-family: "rightland";
+        color: #343a40;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 380px;
+    }
+
+    /*Footer*/
+    #bas_de_page
+    {
+        margin-top: 1040px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 2200px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1800px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 3100px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2700px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 220%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 200%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 240%;
+        height: 1600px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 190%;
+        height: 1400px;
+    }
+
+    /*Cartouche de blanc*/
+    .cartouche_blanc 
+    {
+        padding-left: 0px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1140px;
+    }
+}
+
+@media (max-width: 730px)
+{
+    /*Menu*/
+    nav ul
+    {
+        margin-left: -30px;
+    }
+
+    nav a 
+    {
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+
+    li
+    {
+        margin-right: 0%;
+    }
+
+    /*Image de fond*/
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2500px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 2000px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 3400px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 3000px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 260%;  
+        height: 6300px;
+    }
+
+    /*Footer*/
+    #logo_footer 
+    {
+        background-size: 95px;
+        height: 130px;
+        margin-top: -235px;
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 690px)
+{    
+    /*Images de fond*/
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 220%;
+        height: 1500px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 280%;  
+        height: 6300px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 330px;
+    }
+}
+
+@media (max-width: 670px)
+{
+    /*Images de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 300%;
+        height: 1850px;
+    }
+
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 220%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 260%;
+        height: 1600px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 210%;
+        height: 1400px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2300px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1800px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 3200px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2800px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        background-size: 250%;
+        height: 3600px;
+    }    
+    
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 300%;
+        height: 4800px;
+    }
+
+    /*Chantilly*/
+    #chantilly_3
+    {
+        background-size: 370px;
+    }
+    
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 320px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 320px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 2000px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1600px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2900px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2500px;
+    }
+}
+
+@media (max-width: 630px)
+{    
+    /*Images de fond*/
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 250%;
+        height: 1500px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 240%;
+        height: 1400px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2200px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1800px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2600px;
+    }
+    
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 290px;
+    }
+
+    /*Informations commentaires*/
+    .informations_commentaires
+    {
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+
+    .commentaires 
+    {
+        margin-left: -10%;
+        margin-right: -10%;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 1900px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1600px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2500px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2200px;
+    }
+}
+
+@media (max-width: 602px)
+{
+    /*Images de fond*/
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 280%;
+        height: 1600px;
+    }
+
+    .laboratoire_de_patisseries_4 
+    {
+        background-size: 300%;
+        height: 1900px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2200px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1800px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2400px;
+    }
+
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        height: 3900px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1550px;
+    }    
+    
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 1900px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1600px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2500px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2200px;
+    }
+}
+
+@media (max-width: 585px)
+{
+    /*Image de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 400%;
+        height: 2000px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        height: 4500px;
+    }
+
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 260px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 260px;
+    }
+}
+
+@media (max-width: 575px)
+{
+    /*Identifications inscription | connexion*/
+    #identifications ul 
+    {
+        flex-direction: row;
+        margin-top: 40px; 
+        right: 50px;
+        left: 50px;
+    }
+
+    #identifications li 
+    {
+        margin-top: -55px;
+    }
+    
+    /*Identifications déconnexion*/
+    .deconnexion 
+    {
+        right: 31%;
+        top: 285px;
+    }
+
+    /*Barre séparation identifications inscription | connexion*/
+    .barre
+    {
+        opacity: 1;
+        margin-right: 0px;
+    }
+
+    /*Menu*/
+    nav
+    {
+        margin-top: -50px;
+        margin-bottom: 0px;
+        margin-right: 5%;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 350px;
+    }
+
+    li 
+    {
+        margin-right: 0%;
+        margin-top: 0px;        
+        opacity: 0;
+        z-index: 99999999999999999;
+    }
+
+    nav:hover li 
+    {
+     
+        opacity: 1;
+    }
+
+    #effect_rubrique_menu 
+    {
+        opacity: 1;
+        margin-top: -50px;
+    }
+
+    #effect_rubrique_menu:hover 
+    {
+        background-size: 100px;
+        padding-bottom: 25px;
+        height: unset;
+        opacity: 1;
+    }
+
+    /*Menu drop down icône bol mélangeur*/
+    #icone_bol_melangeur 
+    {
+        background-image: url('../img/patisseries/bol_melangeur.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20%;
+        width: 100%;
+        height: 225px;
+        margin-top: -60px;
+        margin-bottom: 0px;
+        margin-left: 15px;
+        border-radius: 5px;
+        z-index: 2;
+
+    }
+
+    /*Coulure bol mélangeur*/
+    #coulure
+    {
+        background-image: url('../img/patisseries/coulure.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-size: 50%; */
+        width: 100%;
+        height: 405px;
+        margin-top: 48px;
+        margin-left: -165px;
+        margin-bottom: 0px;
+        z-index: 2;
+        opacity: 0;
+        display: inline-block;
+        transform: rotate(20deg);
+    }
+
+    #coulure:hover 
+    {
+        opacity: 1;
+    }
+
+    #icone_bol_melangeur:hover 
+    {
+        opacity: 1;
+        transform: rotate(-20deg);
+    }
+
+    /*Cartouche blanc */
+    .cartouche_blanc 
+    {
+        padding-left: 0px;
+    }
+
+    .welcome-gateau 
+    {
+        height: 340px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*petit_cuisinier*/ 
+    #petit_cuisinier 
+    {
+        background-size: 40%;
+        height: 280px;
+        margin-top: -340px;
+        margin-bottom: 260px;
+    }
+
+    /*Images de fond*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 400%;
+        height: 2100px;
+    }
+
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 400%;
+        height: 2300px;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 600%;
+        height: 3200px;
+    }
+
+    .laboratoire_de_patisseries_4 
+    {
+        background-size: 320%;
+        height: 1900px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2200px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1800px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2400px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        height: 4500px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 260px;
+    }
+
+    /*Photos fraisier*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi 
+    {
+        width: 100%;
+        margin-left: -2.9%;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1775px;
+    }
+
+    /*Texte d'accueil*/
+    #texte_accueil 
+    {
+        margin-top: 200px;
+        margin-bottom: -250px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1600px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2500px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2200px;
+    }
+
+    #footer_a_propos 
+    {
+        margin-top: -500px;
+    }   
+}
+
+@media (max-width: 550px)
+{
+    /*Images de fond*/
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 450%;
+        height: 2300px;
+    }
+
+    .laboratoire_de_patisseries_3
+    {
+        background-size: 650%;
+        height: 3200px;
+    }
+
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 365%;
+        height: 1900px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2200px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1800px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2400px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 320%;
+        height: 4800px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 260px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: 1600px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2500px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2200px;
+    }
+}
+
+@media (max-width: 518px)
+{
+    /*Titre de niveau II*/
+    .h-2 
+    {
+        font-size: 37px;
+        margin-bottom: 35px;
+    }
+
+    /*Images de fond*/
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 360%;
+        height: 1900px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 2200px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1850px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 235%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2400px;
+    }
+
+    /*Fond d'écran 2*/
+    .wallpaper_2 
+    {
+        background-size: 320%;
+        height: 4500px;
+    }
+
+    /*Photos de gâteaux et pâtisseries*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 230px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5, #photos_patisserie_6, #photos_patisserie_7, #photos_patisserie_8 
+    {
+        height: 230px;
+    }
+
+    /*Footer*/    
+    #bas_de_page 
+    {
+        margin-top: 1800px;
+    }
+
+    #footer_fraisier 
+    {
+        margin-top: 1900px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    /*Fond d'écran*/
+    .wallpaper 
+    {
+        height: 3600px;
+    }
+
+    /*Effets Chantilly*/
+    #chantilly 
+    {
+        background-size: 145%;
+    }
+
+    #chantilly_4 
+    {
+        background-size: 107%;
+    }
+
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        background-size: 40%;
+        height: 280px;
+        margin-top: -350px;
+        margin-bottom: 250px;
+    }
+
+    #texte_accueil
+    {
+        margin-top: 200px;
+        margin-bottom: -250px;
+    }
+
+    /*Cartouche de blanc*/
+    .cartouche_blanc 
+    {
+        padding-left: 0px;
+        margin-left: 7.5%;
+        margin-right: 8%;
+    }
+
+    .cartouche_blanc_fraisier 
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /*Photos fraisier*/
+    #photos_fraisier_1_agrandi 
+    {    
+        width: 99%;
+        margin-left: -3.2%;
+    }
+
+    /*Photo carré gateau*/
+    .welcome-gateau 
+    {
+        height: 320px;
+        margin-bottom: 10px;
+    }
+
+    /*Titre de niveau III*/
+    .h-3 
+    {
+        margin-top: 20px;
+    }
+    
+    /*Agencement photos*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi 
+    {
+        margin-top: 312px;
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        margin-top: 632px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi
+    {
+        margin-top: 952px;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi
+    {
+        margin-top: 1272px;
+    }
+
+    #photos_entremet_5_agrandi, #photos_macarons_5_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1592px;
+    }
+
+    #photos_entremet_6_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1912px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 270px;
+    }
+
+    /*Footer*/
+    #bas_de_page
+    {
+        margin-top: 1700px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: 1700px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: -100px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2400px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 2000px;
+    }
+}
+
+@media (max-width: 491px)
+{    
+    /*Laboratoire de pâtisseries*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 420%;
+        height: 2100px;
+    }
+
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        margin-top: -340px;
+    }
+
+    /*Footer*/
+    #bas_de_page
+    {
+        margin-top: 1750px;
+    }
+}
+
+@media (max-width: 488px)
+{
+    /*Images de fond*/
+    .laboratoire_de_patisseries_4
+    {
+        background-size: 480%;
+        height: 1350px;
+    }
+
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        margin-top: -650px;
+    }
+
+    /*Photos gâteaux*/
+    .welcome-gateau 
+    {
+        height: 340px;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    /*Texte d'accueil*/
+    #texte_accueil 
+    {
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+
+    /*Footer*/
+    #bas_de_page
+    {
+        margin-top: 1800px;
+    }
+}
+
+@media (max-width: 480px)
+{   
+    /*Laboratoire de pâtisseries*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 480%;
+        height: 2150px;
+    }
+
+    /*Images de fond*/
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 560%;
+    }
+}
+
+@media (max-width: 464px)
+{   
+    /*Images de fond*/
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 560%;
+    }
+
+    /*Textes Footer*/
+    .textes_bas_de_page 
+    {
+        margin-top: -160px;
+    }
+}
+
+@media (max-width: 436px)
+{   
+    /*Images de fond*/
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 600%;
+    }
+}
+
+@media (max-width: 425px)
+{
+    /*Laboratoire de patîsserie*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 540%;
+        height: 2150px;
+    }
+
+    .laboratoire_de_patisseries_2 
+    {
+        background-size: 680%;
+        height: 2300px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 1800px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1550px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 255%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2600px;
+    }
+
+    /*Cartouche de blanc*/
+    .cartouche_blanc, .cartouche_blanc_2, .cartouche_blanc_3, .cartouche_blanc_4 
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        background-size: 50%;
+        height: 280px;
+        margin-top: -650px;
+        margin-bottom: 300px;
+    }    
+    
+    /*Chantilly*/
+    #chantilly_3 
+    {
+        background-size: 101%;
+    }
+
+    /*Texte d'accueil*/
+    #texte_accueil 
+    {
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        margin-top: 310px;
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        margin-top: 580px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi 
+    {
+        margin-top: 850px;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi
+    {
+        margin-top: 1119px;
+    }
+
+    #photos_entremet_5_agrandi, #photos_macarons_5_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1389px;
+    }
+
+    #photos_entremet_6_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1659px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3 
+    {
+        height: 220px;
+    }
+
+    /*Footer*/ 
+    #bas_de_page 
+    {
+        margin-top: 1850px;
+    }
+
+    /*Textes footer*/
+    .textes_bas_de_page 
+    {
+        font-size: 15px;
+        margin-top: -140px;
+    }
+
+    span 
+    {
+        font-size: 15px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: -100px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: -400px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 2000px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: 1700px;
+    }
+}
+
+@media (max-width: 405px)
+{
+    /*Images de fond*/
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 680%;
+        height: 4350px;
+    }
+
+    /*Footer*/
+    #footer_fraisier 
+    {
+        margin-top: 4150px;
+    }
+}
+
+@media (max-width: 383px)
+{    
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        margin-top: -690px;
+    }
+}
+
+@media (max-width: 375px)
+{
+    /*Laboratoire de pâtisserie*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 560%;
+        height: 2150px;
+    }
+
+    .laboratoire_de_patisseries_4 
+    {
+        height: 1400px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 1700px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1450px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 255%;
+        height: 2800px;
+    }
+
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2600px;
+    }
+
+    /*Agrandissements d'images*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        width: 98%;
+        background-size: 80%;
+
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        margin-top: 310px;
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        margin-top: 548px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi
+    {
+        margin-top: 787px;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi 
+    {
+        margin-top: 1028px;
+    }
+
+    #photos_entremet_5_agrandi, #photos_macarons_5_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1268px;
+    }
+
+    #photos_entremet_6_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1508px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3 
+    {
+        height: 190px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1850px;
+    }
+
+    /*Textes footer*/
+    .textes_bas_de_page 
+    {
+        font-size: 15px;
+        margin-top: -150px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: -300px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: -600px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: 1800px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 374px)
+{    
+    /*Petit cuisinier*/
+    #petit_cuisinier 
+    {
+        margin-top: -720px;
+    }
+}
+
+@media (max-width: 370px)
+{
+    /*Laboratoire de pâtisserie*/
+    .laboratoire_de_patisseries 
+    {
+        background-size: 680%;
+        height: 2250px;
+    }
+
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 750%;
+        height: 4450px;
+    }
+
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1950px;
+    }
+
+    #footer_fraisier 
+    {
+        margin-top: 4250px;
+    }
+}
+
+@media (max-width: 350px)
+{
+    /*Laboratoire de pâtisserie*/
+    .laboratoire_de_patisseries_gateaux 
+    {
+        background-size: 850%;
+        height: 5550px;
+    }
+    
+    /*Voir la recette*/
+    .voir_recette a 
+    {
+        font-size: 25px;
+    }
+
+    /*Agrandissements d'images*/
+    #photos_fraisier_1_agrandi 
+    {
+        width: 98.5%;
+    }
+}
+
+@media (max-width: 320px)
+{
+    /*Laboratoire de patîsserie*/
+    .laboratoire_de_patisseries_2 
+    {
+        height: 2100px;
+    }
+
+    .laboratoire_de_patisseries_4 
+    {
+        height: 1450px;
+    }
+
+    .laboratoire_de_patisseries_fraisier
+    {
+        background-size: 235%;
+        height: 1600px;
+    }
+    .laboratoire_de_patisseries_gateaux
+    {
+        background-size: 235%;
+        height: 1150px;
+    }
+
+    .laboratoire_de_patisseries_entremet
+    {
+        background-size: 265%;
+        height: 2800px;
+    }
+    
+    .laboratoire_de_patisseries_macarons
+    {
+        background-size: 235%;
+        height: 2600px;
+    }
+
+    /*Photos de gâteaux*/
+    #photos_gateau_1, #photos_gateau_2, #photos_gateau_3, #photos_gateau_4, #photos_gateau_5 
+    {
+        height: 180px;
+    }
+
+    #photos_patisserie_1, #photos_patisserie_2, #photos_patisserie_3, #photos_patisserie_4, #photos_patisserie_5 
+    {
+        height: 180px;
+    }
+
+    /*Agrandissements d'images*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        width: 98%;
+        background-size: 80%;
+
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+    }
+
+    /*Petit cuisiner*/
+    #petit_cuisinier 
+    {
+        margin-top: -750px;
+        background-size: 60%;
+        height: 280px;
+    }
+
+    /*Agencement photos*/
+    #photos_fraisier_1_agrandi, #photos_tarte_aux_fruits_1_agrandi, #photos_entremet_1_agrandi, #photos_pithiviers_1_agrandi, #photos_paris_brest_1_agrandi, 
+    #photos_eclair_au_chocolat_1_agrandi, #photos_barquette_au_marron_1_agrandi, #photos_baba_au_rhum_1_agrandi, #photos_macarons_1_agrandi, #photos_mille_feuille_1_agrandi,
+    #photos_choux_a_la_creme_1_agrandi, #photos_tarte_citron_meringuee_1_agrandi, #photos_choux_caramel_1_agrandi
+    {
+        margin-top: 308px;
+    }
+
+    #photos_fraisier_2_agrandi, #photos_tarte_aux_fruits_2_agrandi, #photos_entremet_2_agrandi, #photos_pithiviers_2_agrandi, #photos_paris_brest_2_agrandi,
+    #photos_eclair_au_chocolat_2_agrandi, #photos_barquette_au_marron_2_agrandi, #photos_baba_au_rhum_2_agrandi, #photos_macarons_2_agrandi, #photos_mille_feuille_2_agrandi,
+    #photos_choux_a_la_creme_2_agrandi, #photos_tarte_citron_meringuee_2_agrandi, #photos_choux_caramel_2_agrandi
+    {
+        margin-top: 506px;
+    }
+
+    #photos_fraisier_3_agrandi, #photos_tarte_aux_fruits_3_agrandi, #photos_entremet_3_agrandi, #photos_pithiviers_3_agrandi, #photos_paris_brest_3_agrandi,
+    #photos_eclair_au_chocolat_3_agrandi, #photos_barquette_au_marron_3_agrandi, #photos_baba_au_rhum_3_agrandi, #photos_macarons_3_agrandi, #photos_mille_feuille_3_agrandi,
+    #photos_choux_a_la_creme_3_agrandi, #photos_tarte_citron_meringuee_3_agrandi, #photos_choux_caramel_3_agrandi 
+    {
+        margin-top: 706px;
+    }
+
+    #photos_fraisier_4_agrandi, #photos_entremet_4_agrandi, #photos_macarons_4_agrandi
+    {
+        margin-top: 906px;
+    }
+
+    #photos_entremet_5_agrandi, #photos_macarons_5_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1105px;
+    }
+
+    #photos_entremet_6_agrandi
+    {
+        width: 100%;
+        background-size: 80%;
+        margin-top: 1305px;
+    }
+
+    #photos_fraisier_1, #photos_fraisier_2, #photos_fraisier_3, #photos_fraisier_4, #photos_tarte_aux_fruits_1, #photos_tarte_aux_fruits_2, #photos_tarte_aux_fruits_3,
+    #photos_entremet_1, #photos_entremet_2, #photos_entremet_3, #photos_entremet_4, #photos_entremet_5, #photos_entremet_6, #photos_pithiviers_1, #photos_pithiviers_2,
+    #photos_pithiviers_3, #photos_paris_brest_1, #photos_paris_brest_2, #photos_paris_brest_3, #photos_eclair_au_chocolat_1, #photos_eclair_au_chocolat_2, #photos_eclair_au_chocolat_3
+    #photos_barquette_au_marron_1, #photos_barquette_au_marron_2, #photos_barquette_au_marron_3, #photos_baba_au_rhum_1, #photos_baba_au_rhum_2, #photos_baba_au_rhum_3,
+    #photos_macarons_1, #photos_macarons_2, #photos_macarons_3, #photos_macarons_4, #photos_macarons_5, #photos_mille_feuille_1, #photos_mille_feuille_2, #photos_mille_feuille_3,
+    #photos_choux_a_la_creme_1, #photos_choux_a_la_creme_2, #photos_choux_a_la_creme_3, #photos_tarte_citron_meringuee_1, #photos_tarte_citron_meringuee_2, #photos_tarte_citron_meringuee_3,
+    #photos_choux_caramel_1, #photos_choux_caramel_2, #photos_choux_caramel_3
+    {
+        height: 150px;
+    }
+    
+    /*Footer*/
+    #bas_de_page 
+    {
+        margin-top: 1950px;
+    }
+
+    #footer_gateaux 
+    {
+        margin-top: -100px;
+    }
+
+    /*Footer gâteaux et pâtisseries*/
+    #footer_fraisier 
+    {
+        margin-top: -500px;
+    }
+
+    #footer_tarte_aux_fruits, #footer_pithiviers, #footer_paris_brest, #footer_eclair_au_chocolat, #footer_barquette_au_marron, #footer_baba_au_rhum,
+    #footer_mille_feuille, #footer_choux_a_la_creme, #footer_tarte_citron_meringuee, #footer_choux_caramel
+    {
+        margin-top: -800px;
+    }
+
+    #footer_entremet
+    {
+        margin-top: -200px;
+    }
+
+    #footer_macarons
+    {
+        margin-top: -400px;
+    }
+}
+
+@media (max-width: 319px)
+{
+    /*Footer*/
+    #footer_fraisier 
+    {
+        margin-top: 4250px;
+    }
+}
